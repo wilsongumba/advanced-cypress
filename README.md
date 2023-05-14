@@ -3,8 +3,8 @@
 This is a repo for advanced cypress testing with javascript
 
 ## Instalation
-> clone this repo
+* clone this repo
 
-> `npm install`
+* `npm install`
 
-> `npm start`
+* `npm start`
