@@ -6,6 +6,11 @@ beforeEach(() => {
     .visit('/')
 })
 
+afterEach(() => {
+  cy.realPress(['F2'])
+  cy.get('#tools > :nth-child(1)').click({ force: true })
+})
+
 it('Chaining commands', () => {
   cy.get('[data-cy=create-board]').click();
   cy.get('[data-cy=new-board-input]').type("test board");

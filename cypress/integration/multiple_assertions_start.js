@@ -18,6 +18,11 @@ beforeEach(() => {
   cy.get('[data-cy=add-task]').click();
 })
 
+afterEach(() => {
+  cy.realPress(['F2'])
+  cy.get('#tools > :nth-child(1)').click({ force: true })
+})
+
 it('Multiple assertions', () => {
   cy
     .get('[data-cy=task]')
