@@ -13,3 +13,8 @@ Cypress.Commands.add('addBoard', (input) => {
     .type(input + '{enter}');
 
 })
+
+Cypress.Commands.add('take', (input) => {
+  cy
+    .get(`[data-cy=${input}]`)
+})

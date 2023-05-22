@@ -12,6 +12,7 @@ declare namespace Cypress {
      * cy
      *   .addBoard('board name')
      */
-    addBoard()
+    addBoard(),
+    take()
   }
 }
